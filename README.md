@@ -1,6 +1,6 @@
 <snippet>
-  <content><![CDATA[
-# ${1:Convolutional Networks for Stock Predicting}
+  <content>
+# Convolutional Networks for Stock Predicting
 
 This project aims to train a convolutional networks for stock price predicting.
 Using Python as the programming language.
@@ -58,6 +58,6 @@ All the generated images will be stored in 'figures' and 'figures_v2' files sepe
 ## License
 
 MIT License
-]]></content>
+</content>
   <tabTrigger>readme</tabTrigger>
 </snippet>
