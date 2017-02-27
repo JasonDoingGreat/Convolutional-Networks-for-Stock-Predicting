@@ -1,5 +1,3 @@
-<snippet>
-  <content>
 # Convolutional Networks for Stock Predicting
 
 This project aims to train a convolutional networks for stock price predicting.
@@ -58,5 +56,4 @@ All the generated images will be stored in 'figures' and 'figures_v2' files sepe
 ## License
 
 MIT License
-</content>
-</snippet>
+
