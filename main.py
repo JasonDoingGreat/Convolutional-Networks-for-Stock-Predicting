@@ -31,7 +31,7 @@ def data_process(data):
 
 
 def get_pixel_values():
-    file_name = r'C:\Users\lzzdu\Desktop\646project\figures'
+    file_name = r'\figures'
     pixels = []
     for filename in glob.glob(file_name + '\*.png'):
         im = Image.open(filename)
@@ -56,7 +56,7 @@ def find_returns(data):
 
 def convert_image():
     size = 54, 32
-    file_name = r'C:\Users\lzzdu\Desktop\646project\figures'
+    file_name = r'\figures'
     for filename in glob.glob(file_name + '\*.png'):
         img = Image.open(filename)
         img.thumbnail(size)
@@ -81,7 +81,7 @@ def plot_data(data):
             ax.set_axis_off()
             fig.add_axes(ax)
             ax.plot(t, high[0:-1], 'b', t, low[0:-1], 'g')
-            fig.savefig(r'C:\Users\lzzdu\Desktop\646project\figures' + file_name)
+            fig.savefig(r'\figures' + file_name)
             fig.clf()
             file_name_number += 1
             count += 1
@@ -112,7 +112,7 @@ def split_data(data):
 
 
 def extract_data():
-    file_name = r'C:\Users\lzzdu\Desktop\646project\data.txt'
+    file_name = r'\data.txt'
     infile = open(file_name, 'r')
     temp_buffer = []
     for line in infile:
@@ -138,8 +138,8 @@ def main():
     original_data = extract_data()
     splitted_data = split_data(original_data)
     useful_data = extract_useful_data(splitted_data)
-#    plot_data(useful_data)
-#    convert_image()
+    plot_data(useful_data)
+    convert_image()
     returns = np.asarray(find_returns(useful_data))
     training_data = np.asarray(get_pixel_values())
     training_data = sm.add_constant(training_data, has_constant='add')

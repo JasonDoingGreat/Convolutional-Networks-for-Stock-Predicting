@@ -82,7 +82,7 @@ def find_returns(data):
     
     
 def get_pixel_values():
-    file_name = r'C:\Users\lzzdu\Desktop\646project\figures_v2'
+    file_name = r'\figures_v2'
     pixels = []
     for filename in glob.glob(file_name + '\*.png'):
         im = misc.imread(filename)
@@ -91,7 +91,7 @@ def get_pixel_values():
     
     
 def convert_image():
-    file_name = r'C:\Users\lzzdu\Desktop\646project\figures_v2'
+    file_name = r'\figures_v2'
     for filename in glob.glob(file_name + '\*.png'):
         img = Image.open(filename)
         img = img.convert('RGB')
@@ -115,7 +115,7 @@ def plot_data(data):
             ax.set_axis_off()
             fig.add_axes(ax)
             ax.plot(t, high[0:-1], 'b', t, low[0:-1], 'g')
-            fig.savefig(r'C:\Users\lzzdu\Desktop\646project\figures_v2' + file_name, dpi=100)
+            fig.savefig(r'\figures_v2' + file_name, dpi=100)
             fig.clf()
             file_name_number += 1
             count += 1
@@ -153,7 +153,7 @@ def split_data(data):
 
 
 def extract_data():
-    file_name = r'C:\Users\lzzdu\Desktop\646project\data.txt'
+    file_name = r'\data.txt'
     infile = open(file_name, 'r')
     temp_buffer = []
     for line in infile:
@@ -177,8 +177,8 @@ def extract_data():
 
 def main():
     data = load_sample_data()
-#    plot_data(data)
-#    convert_image()
+    plot_data(data)
+    convert_image()
     x = np.asarray(get_pixel_values())
     y = np.asarray(find_returns(data))
     x_train = x[0:4340]
