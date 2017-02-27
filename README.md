@@ -59,7 +59,7 @@ All the generated images will be stored in 'figures' and 'figures_v2' files sepe
 
 ## Authors
 
-* **Zezhou Li** - *Modified work of initial work by **Ashwin Siripurapu** * - See Acknowledgments
+* **Zezhou Li** - *Modified work of initial work by Ashwin Siripurapu* - See Acknowledgments
 
 ## License
 
