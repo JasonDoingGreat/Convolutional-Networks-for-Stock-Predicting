@@ -59,5 +59,4 @@ All the generated images will be stored in 'figures' and 'figures_v2' files sepe
 
 MIT License
 </content>
-  <tabTrigger>readme</tabTrigger>
 </snippet>
