@@ -59,10 +59,13 @@ All the generated images will be stored in 'figures' and 'figures_v2' files sepe
 
 ## Authors
 
-* **Zezhou Li**
-* **Ashwin Siripurapu** - *Initial work* - Paper at Stanford University
+* **Zezhou Li** - *Modified work of initial work by **Ashwin Siripurapu** * - See Acknowledgments
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
+## Acknowledgments
+
+* **Ashwin Siripurapu** - *Initial work* - Paper at Stanford University
+*	http://cs231n.stanford.edu/reports/ashwin_final_paper.pdf
