@@ -68,4 +68,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * **Ashwin Siripurapu** - *Initial work* - Paper at Stanford University
-*	http://cs231n.stanford.edu/reports/ashwin_final_paper.pdf
+*	http://cs231n.stanford.edu/reports/2015/pdfs/ashwin_final_paper.pdf
